@@ -62,7 +62,7 @@ jobs:
           severity: CRITICAL
           exit-code: '1'
 
-  # ── Job 4 : Analyse CodeQL
+  # ── Job 4 : Analyse CodeQL 
   codeql:
     name: Analyse CodeQL
     runs-on: ubuntu-latest
