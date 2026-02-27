@@ -21,7 +21,7 @@ const httpDuration = new promClient.Histogram({
   buckets: [0.01, 0.05, 0.1, 0.3, 0.5, 1],
 });
 
-// Middleware d'instrumentation
+// Middleware d'instrumentation 
 app.use((req, res, next) => {
   const end = httpDuration.startTimer();
   res.on('finish', () => {
